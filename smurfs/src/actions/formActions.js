@@ -11,5 +11,5 @@ export const addSmurf = smurf => dispatch => {
         .then(res => {
             dispatch({ type: ADD_SMURF_SUCCESS, payload: res.data });
         })
-        .catch(err => dispatch({ type: ADD_SMURF_FAILURE, payload: res.err }));
+        .catch(err => dispatch({ type: ADD_SMURF_FAILURE, payload: err }));
 };
